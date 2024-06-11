@@ -6,22 +6,22 @@ const listLink = [
   {
     name: "Home",
     link: "/",
-    icon: <IoHomeOutline />,
+    icon: <IoHomeOutline size={24} />,
   },
   {
     name: "Profile",
     link: "/profile",
-    icon: <CgProfile />,
+    icon: <CgProfile size={24} />,
   },
   {
     name: "About",
     link: "/about",
-    icon: <SiAboutdotme />,
+    icon: <SiAboutdotme size={24} />,
   },
   {
     name: "Contact",
     link: "/contact",
-    icon: <IoMdContact />,
+    icon: <IoMdContact size={24} />,
   },
 ];
 
