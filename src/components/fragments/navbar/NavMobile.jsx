@@ -1,7 +1,6 @@
 import React from "react";
 import LogoBrand from "@/components/ui/LogoBrand";
 import { CgMenuMotion } from "react-icons/cg";
-import NavLink from "./NavLink";
 import Link from "next/link";
 import listLink from "@/lib/utils/listLink";
 import { usePathname } from "next/navigation";
