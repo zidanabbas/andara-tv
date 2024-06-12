@@ -3,12 +3,14 @@ import Link from "next/link";
 
 export default function LogoBrand() {
   return (
-    <Link href="/" className="p-2">
+    <Link href="/" className="p-2 flex items-center">
       <Image
         src="/images/logo-andara-tv.png"
-        alt="logo"
-        width={140}
-        height={140}
+        alt="Andara TV"
+        width={500}
+        height={500}
+        className="w-auto h-auto"
+        loading="lazy"
       />
     </Link>
   );
