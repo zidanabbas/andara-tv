@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full h-14 fixed flex justify-between items-center px-2 md:px-16 drop-shadow-xl bg-transparent backdrop-blur-xl">
+      <header className="w-full h-14 fixed flex justify-between items-center px-2 md:px-16 drop-shadow bg-white z-10">
         <div className="container ">
           <div className="w-full relative flex justify-between px-2 ">
             <LogoBrand />
