@@ -11,9 +11,22 @@ export default function YoutubeVideo() {
   const [LastVideos, setLastVideos] = useState([]);
   useEffect(() => {
     const fetchYoutubeVideo = async () => {
-      await fetchVideos((items) => {
-        setLastVideos(items);
-      });
+      try {
+        // Mengambil data dari sessionStorage jika tersedia
+        const cachedData = sessionStorage.getItem("cachedVideos");
+        if (cachedData) {
+          setLastVideos(JSON.parse(cachedData));
+        } else {
+          // Jika data tidak tersedia di cache, lakukan fetch dari API
+          await fetchVideos((items) => {
+            setLastVideos(items);
+            // menyimpan data ke session storage
+            sessionStorage.setItem("cachedVideos", JSON.stringify(items));
+          });
+        }
+      } catch (error) {
+        console.error("Failed to fetch or cache videos:", error);
+      }
     };
 
     fetchYoutubeVideo();
