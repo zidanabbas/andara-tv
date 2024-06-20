@@ -2,17 +2,16 @@ import React from "react";
 
 export default function YoutubeComponent({ title, embed }) {
   return (
-    <div className="max-w-sm max-h-72 flex flex-col items-center rounded-lg p-4 relative shadow-xl shadow-slate-600">
+    <div className="max-w-md md:max-w-3xl md:h-72 flex items-center justify-center rounded-lg p-3 overflow-hidden shadow-md shadow-slate-900">
       <iframe
         src={`https://www.youtube.com/embed/${embed}`}
-        // src={src}
         title={title}
-        width={200}
-        height={200}
+        width="100%"
+        height="100%"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="rounded-lg"
+        className="rounded-lg aspect-auto"
       />
     </div>
   );
