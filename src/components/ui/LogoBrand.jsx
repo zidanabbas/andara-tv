@@ -7,9 +7,9 @@ export default function LogoBrand() {
       <Image
         src="/images/logo-andara-tv.png"
         alt="Andara TV"
-        width={150}
-        height={150}
-        className="w-auto h-auto"
+        width={500}
+        height={500}
+        className="w-32 h-auto"
         loading="lazy"
       />
     </Link>

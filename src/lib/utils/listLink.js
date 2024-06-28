@@ -2,6 +2,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { GrGallery } from "react-icons/gr";
 import { IoMdContact } from "react-icons/io";
+import { RiYoutubeFill } from "react-icons/ri";
 const listLink = [
   {
     name: "Home",
@@ -17,6 +18,11 @@ const listLink = [
     name: "Gallery",
     link: "/gallery",
     icon: <GrGallery size={24} />,
+  },
+  {
+    name: "Youtube",
+    link: "/youtube",
+    icon: <RiYoutubeFill size={24} />,
   },
   {
     name: "Contact",
