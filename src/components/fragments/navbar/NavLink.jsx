@@ -7,7 +7,7 @@ export default function NavLink() {
   const pathname = usePathname();
   return (
     <nav className="hidden md:flex items-center px-3 text-black py-1">
-      <ul className="flex min-w-[300px] justify-between w-full">
+      <ul className="flex gap-3 justify-between w-full">
         {listLink.map((path) => (
           <div className="flex gap-2 items-center" key={path.name}>
             <Link
