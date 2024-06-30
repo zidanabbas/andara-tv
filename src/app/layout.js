@@ -15,11 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={sora.className}>
-        <Layouts>
-          <Header />
-          {children}
-          <Footer />
-        </Layouts>
+        <Header />
+        <Layouts>{children}</Layouts>
+        <Footer />
       </body>
     </html>
   );
