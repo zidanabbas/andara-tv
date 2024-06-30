@@ -10,7 +10,7 @@ export default function LogoBrand() {
         width={500}
         height={500}
         className="w-32 h-auto"
-        loading="lazy"
+        loading="eager"
       />
     </Link>
   );
