@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Layouts({ children }) {
   return (
-    <div className="w-full h-full bg-background-color overflow-hidden">
+    <div className="w-full min-h-dvh bg-background-color overflow-hidden">
       {children}
     </div>
   );
