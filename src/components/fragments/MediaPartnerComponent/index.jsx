@@ -1,16 +1,21 @@
-import Image from "next/image";
 import React from "react";
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
+import ContainTitle from "@/components/ui/ContainTitle";
+import MediaImage from "@/components/ui/MediaImage";
 
 export default function MediaPartnerComponent() {
   return (
-    <div className="max-w-64 md:max-w-xs object-contain">
-      <Image
-        src={"/images/ilustrator.png"}
-        alt="ilustrator"
-        width={150}
-        height={200}
-        className="w-auto h-auto bg-slate-200 rounded-lg"
-      />
-    </div>
+    <ContainerBody classname={"py-24"}>
+      <SectionContainerBody classname={"bg-primary"} title={"Media Partner"}>
+        <ContainTitle
+          title={"Media Partner"}
+          classname={"font-semibold text-white"}
+        />
+        <div className="container rounded-xl bg-white sm:flex sm:flex-wrap sm:justify-evenly gap-4 sm:gap-6 py-4 overflow-scroll max-h-[700px]">
+          <MediaImage />
+        </div>
+      </SectionContainerBody>
+    </ContainerBody>
   );
 }
