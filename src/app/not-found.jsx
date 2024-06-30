@@ -14,7 +14,8 @@ export default function NotFound() {
             width={500}
             height={500}
             alt="ilustrator"
-            className="w-full object-cover  flex-1"
+            className="w-full object-cover"
+            loading="eager"
           />
         </div>
         <div className="w-full md:w-2/3">
