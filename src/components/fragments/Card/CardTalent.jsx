@@ -3,26 +3,20 @@ import React from "react";
 
 export default function CardTalent({ src, alt, role, name, description }) {
   return (
-    <div className="w-56 md:min-w-64 overflow-hidden rounded-lg shadow-lg">
-      <div className="w-full max-h-56 lg:max-h-64 px-2 md:px-6 bg-primary/60">
-        <Image
-          src={src}
-          width={500}
-          height={500}
-          alt={alt}
-          className="object-cover object-center h-48 sm:h-56 md:h-56 lg:h-64 "
-        />
-      </div>
-      <div className="text-white text-center flex bg-primary flex-col px-2 py-3">
-        <h2 className="w-full text-xs md:text-base lg:text-lg 2xl:text-xl font-bold">
-          {role}
-        </h2>
-        <h3 className="text-base font-medium">{name}</h3>
-        <div className="py-2 text-wrap font-light">
-          <p className="text-base text-pretty">
-            {description.substring(0, 100)} {description.length > 50 && "..."}
-          </p>
-        </div>
+    <div className=" sm:w-64 md:w-80 lg:w-72 mb-8 sm:mb-0 overflow-hidden rounded-lg shadow-lg shadow-slate-500">
+      <Image
+        src={src}
+        width={500}
+        height={500}
+        alt={alt}
+        className="w-full max-h-48 object-contain object-center bg-primary/50 "
+      />
+      <div className="text-white  bg-primary px-6 py-4">
+        <h2 className="text-base text-center font-semibold mb-2">{role}</h2>
+        <h3 className="text-base font-bold mb-2">{name}</h3>
+        <p className="text-sm text-pretty font-medium">
+          {description.substring(0, 120)} {description.length > 120 && "..."}
+        </p>
       </div>
     </div>
   );
