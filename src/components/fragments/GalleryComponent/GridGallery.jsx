@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export default function GridGallery() {
   return (
@@ -110,5 +110,5 @@ export default function GridGallery() {
         />
       </div>
     </div>
-  );
+  )
 }

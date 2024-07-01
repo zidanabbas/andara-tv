@@ -1,8 +1,8 @@
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { IoArrowBackCircleOutline } from "react-icons/io5";
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx"
+import Image from "next/image"
+import Link from "next/link"
+import React from "react"
+import { IoArrowBackCircleOutline } from "react-icons/io5"
 
 export default function NotFound() {
   return (
@@ -32,5 +32,5 @@ export default function NotFound() {
         </div>
       </section>
     </ContainerBody>
-  );
+  )
 }

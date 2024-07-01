@@ -1,15 +1,15 @@
-import { Sora } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/fragments/header/Header";
-import Layouts from "@/components/layouts";
-import Footer from "@/components/fragments/footer";
+import { Sora } from "next/font/google"
+import "./globals.css"
+import Header from "@/components/fragments/header/Header"
+import Layouts from "@/components/layouts"
+import Footer from "@/components/fragments/footer"
 
-const sora = Sora({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Andara TV Entertainment",
-  description: "Media Kreatif Warga Andara",
-};
+  description: "Media Kreatif Warga Andara"
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -20,5 +20,5 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
-  );
+  )
 }

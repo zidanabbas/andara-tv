@@ -1,11 +1,11 @@
-import React from "react";
-import Image from "next/image";
-import MediaPartnerComponent from "@/components/fragments/MediaPartnerComponent";
-import Banner from "@/components/fragments/banner";
-import GalleryComponent from "@/components/fragments/GalleryComponent";
-import CrewTalentComponent from "@/components/fragments/CrewTalentComponent";
-import ProfileComponent from "@/components/fragments/ProfileComponent";
-import YoutubeComponent from "@/components/fragments/YoutubeComponent";
+import React from "react"
+import Image from "next/image"
+import MediaPartnerComponent from "@/components/fragments/MediaPartnerComponent"
+import Banner from "@/components/fragments/banner"
+import GalleryComponent from "@/components/fragments/GalleryComponent"
+import CrewTalentComponent from "@/components/fragments/CrewTalentComponent"
+import ProfileComponent from "@/components/fragments/ProfileComponent"
+import YoutubeComponent from "@/components/fragments/YoutubeComponent"
 
 export default function HomeView() {
   return (
@@ -43,5 +43,5 @@ export default function HomeView() {
       <GalleryComponent />
       <MediaPartnerComponent />
     </>
-  );
+  )
 }

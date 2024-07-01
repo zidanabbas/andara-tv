@@ -1,5 +1,5 @@
-import ContainTitle from "@/components/ui/ContainTitle";
-import React from "react";
+import ContainTitle from "@/components/ui/ContainTitle"
+import React from "react"
 
 export default function VisiMisiComponent({ title, classname, children }) {
   return (
@@ -8,5 +8,5 @@ export default function VisiMisiComponent({ title, classname, children }) {
 
       <div className="sm:flex justify-evenly gap-4 rounded-lg">{children}</div>
     </div>
-  );
+  )
 }

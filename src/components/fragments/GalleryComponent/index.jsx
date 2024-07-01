@@ -1,23 +1,23 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Button from "@/components/ui/Button";
-import ContainTitle from "@/components/ui/ContainTitle";
-import ImageCard from "../Card/ImageCard";
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
+"use client"
+import React, { useEffect, useState } from "react"
+import Button from "@/components/ui/Button"
+import ContainTitle from "@/components/ui/ContainTitle"
+import ImageCard from "../Card/ImageCard"
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
 
 export default function GalleryComponent() {
-  const [DataGallery, setDataGallery] = useState([]);
+  const [DataGallery, setDataGallery] = useState([])
 
   useEffect(() => {
     async function fetchDataGallery() {
-      const response = await fetch("/api/gallery");
-      const data = await response.json();
-      setDataGallery(data.data);
+      const response = await fetch("/api/gallery")
+      const data = await response.json()
+      setDataGallery(data.data)
     }
 
-    return fetchDataGallery;
-  }, []);
+    return fetchDataGallery
+  }, [])
 
   return (
     <ContainerBody classname={"bg-primary py-24"}>
@@ -34,5 +34,5 @@ export default function GalleryComponent() {
         <Button href="/gallery">Read More</Button>
       </SectionContainerBody>
     </ContainerBody>
-  );
+  )
 }

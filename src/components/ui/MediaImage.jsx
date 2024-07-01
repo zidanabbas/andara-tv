@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from "next/image"
+import React from "react"
 
 export default function MediaImage() {
   return (
@@ -12,5 +12,5 @@ export default function MediaImage() {
         className="w-auto bg-slate-500 rounded-lg"
       />
     </div>
-  );
+  )
 }

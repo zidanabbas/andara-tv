@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+import Link from "next/link"
 
 export default function LogoBrand() {
   return (
@@ -13,5 +13,5 @@ export default function LogoBrand() {
         loading="eager"
       />
     </Link>
-  );
+  )
 }

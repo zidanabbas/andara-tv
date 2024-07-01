@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from "next/image"
+import React from "react"
 
 export default function ImageCard({ src, alt }) {
   return (
@@ -12,5 +12,5 @@ export default function ImageCard({ src, alt }) {
         className="w-full object-cover rounded-lg hover:scale-105 ease-in-out duration-500"
       />
     </div>
-  );
+  )
 }

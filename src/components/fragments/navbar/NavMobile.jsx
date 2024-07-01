@@ -1,11 +1,11 @@
-"use client";
-import React from "react";
-import Link from "next/link";
-import listLink from "@/lib/utils/listLink";
-import { usePathname } from "next/navigation";
+"use client"
+import React from "react"
+import Link from "next/link"
+import listLink from "@/lib/utils/listLink"
+import { usePathname } from "next/navigation"
 
 export default function NavMobile({ isOpen }) {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <>
@@ -38,5 +38,5 @@ export default function NavMobile({ isOpen }) {
         </div>
       )}
     </>
-  );
+  )
 }

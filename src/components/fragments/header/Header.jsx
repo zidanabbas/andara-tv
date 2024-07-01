@@ -1,22 +1,22 @@
-"use client";
-import React, { useState, useEffect } from "react";
-import NavLink from "../navbar/NavLink";
-import NavMobile from "../navbar/NavMobile";
-import LogoBrand from "@/components/ui/LogoBrand";
-import { MdMenu } from "react-icons/md";
-import { CgMenuMotion } from "react-icons/cg";
-import { usePathname } from "next/navigation";
+"use client"
+import React, { useState, useEffect } from "react"
+import NavLink from "../navbar/NavLink"
+import NavMobile from "../navbar/NavMobile"
+import LogoBrand from "@/components/ui/LogoBrand"
+import { MdMenu } from "react-icons/md"
+import { CgMenuMotion } from "react-icons/cg"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+    setIsOpen(false)
+  }, [pathname])
 
   return (
     <>
@@ -36,5 +36,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }

@@ -1,11 +1,11 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
-import { BsInstagram } from "react-icons/bs";
-import { FaTwitter, FaWhatsapp } from "react-icons/fa";
-import { IoLocationOutline } from "react-icons/io5";
-import listLink from "@/lib/utils/listLink";
+import React from "react"
+import Image from "next/image"
+import Link from "next/link"
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx"
+import { BsInstagram } from "react-icons/bs"
+import { FaTwitter, FaWhatsapp } from "react-icons/fa"
+import { IoLocationOutline } from "react-icons/io5"
+import listLink from "@/lib/utils/listLink"
 
 export default function Footer() {
   return (
@@ -63,5 +63,5 @@ export default function Footer() {
         </div>
       </div>
     </ContainerBody>
-  );
+  )
 }
