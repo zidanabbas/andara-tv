@@ -1,5 +1,5 @@
-import React from "react";
-import ContainTitle from "../ContainTitle";
+import React from "react"
+import ContainTitle from "../ContainTitle"
 
 export default function Visi() {
   return (
@@ -25,5 +25,5 @@ export default function Visi() {
         </p>
       </div>
     </div>
-  );
+  )
 }

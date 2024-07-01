@@ -1,11 +1,11 @@
-import VisiMisiComponent from "@/components/fragments/VisiMisiComponent";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import Button from "@/components/ui/Button";
-import ContainTitle from "@/components/ui/ContainTitle";
-import Misi from "@/components/ui/VisiMisi/Misi";
-import Visi from "@/components/ui/VisiMisi/Visi";
-import Image from "next/image";
-import React from "react";
+import VisiMisiComponent from "@/components/fragments/VisiMisiComponent"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import Button from "@/components/ui/Button"
+import ContainTitle from "@/components/ui/ContainTitle"
+import Misi from "@/components/ui/VisiMisi/Misi"
+import Visi from "@/components/ui/VisiMisi/Visi"
+import Image from "next/image"
+import React from "react"
 
 export default function ProfileView() {
   return (
@@ -15,7 +15,7 @@ export default function ProfileView() {
         style={{
           backgroundImage: `url('/images/banner.png')`,
           height: "270px",
-          position: "relative",
+          position: "relative"
         }}
       >
         <Image
@@ -30,7 +30,7 @@ export default function ProfileView() {
             left: "50%",
             transform: "translateX(-50%)" + "translateY(50%)",
             right: "0",
-            objectFit: "cover",
+            objectFit: "cover"
           }}
         />
       </div>
@@ -72,5 +72,5 @@ export default function ProfileView() {
         <Misi />
       </VisiMisiComponent>
     </>
-  );
+  )
 }

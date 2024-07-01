@@ -1,34 +1,34 @@
-import { IoHomeOutline } from "react-icons/io5";
-import { CgProfile } from "react-icons/cg";
-import { GrGallery } from "react-icons/gr";
-import { IoMdContact } from "react-icons/io";
-import { RiYoutubeFill } from "react-icons/ri";
+import { IoHomeOutline } from "react-icons/io5"
+import { CgProfile } from "react-icons/cg"
+import { GrGallery } from "react-icons/gr"
+import { IoMdContact } from "react-icons/io"
+import { RiYoutubeFill } from "react-icons/ri"
 const listLink = [
   {
     name: "Home",
     link: "/",
-    icon: <IoHomeOutline size={24} />,
+    icon: <IoHomeOutline size={24} />
   },
   {
     name: "Profile",
     link: "/profile",
-    icon: <CgProfile size={24} />,
+    icon: <CgProfile size={24} />
   },
   {
     name: "Gallery",
     link: "/gallery",
-    icon: <GrGallery size={24} />,
+    icon: <GrGallery size={24} />
   },
   {
     name: "Youtube",
     link: "/youtube",
-    icon: <RiYoutubeFill size={24} />,
+    icon: <RiYoutubeFill size={24} />
   },
   {
     name: "Contact",
     link: "/contact",
-    icon: <IoMdContact size={24} />,
-  },
-];
+    icon: <IoMdContact size={24} />
+  }
+]
 
-export default listLink;
+export default listLink

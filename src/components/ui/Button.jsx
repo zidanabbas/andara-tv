@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 
 export default function Button({ onClick, href, classname, children }) {
   return (
@@ -11,5 +11,5 @@ export default function Button({ onClick, href, classname, children }) {
         {children}
       </Link>
     </button>
-  );
+  )
 }

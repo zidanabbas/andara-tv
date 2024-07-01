@@ -1,8 +1,8 @@
-import React from "react";
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import ContainTitle from "@/components/ui/ContainTitle";
-import MediaImage from "@/components/ui/MediaImage";
+import React from "react"
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import ContainTitle from "@/components/ui/ContainTitle"
+import MediaImage from "@/components/ui/MediaImage"
 
 export default function MediaPartnerComponent() {
   return (
@@ -17,5 +17,5 @@ export default function MediaPartnerComponent() {
         </div>
       </SectionContainerBody>
     </ContainerBody>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import React from "react";
-import CardTalent from "../Card/CardTalent";
-import ContainTitle from "@/components/ui/ContainTitle";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import Button from "@/components/ui/Button";
+import React from "react"
+import CardTalent from "../Card/CardTalent"
+import ContainTitle from "@/components/ui/ContainTitle"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import Button from "@/components/ui/Button"
 
 export default function CrewTalentComponent() {
   return (
@@ -65,5 +65,5 @@ export default function CrewTalentComponent() {
         <Button href={"/crew"}>Read More</Button>
       </SectionContainerBody>
     </div>
-  );
+  )
 }

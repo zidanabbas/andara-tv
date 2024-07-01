@@ -1,22 +1,22 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import ContainTitle from "@/components/ui/ContainTitle";
-import VideoComponent from "./VideoComponent";
-import Button from "@/components/ui/Button";
-import { fetchVideos } from "@/services/youtube-api";
+"use client"
+import React, { useEffect, useState } from "react"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import ContainTitle from "@/components/ui/ContainTitle"
+import VideoComponent from "./VideoComponent"
+import Button from "@/components/ui/Button"
+import { fetchVideos } from "@/services/youtube-api"
 
 export default function YoutubeComponent() {
-  const [LastVideos, setLastVideos] = useState([]);
+  const [LastVideos, setLastVideos] = useState([])
   useEffect(() => {
     const fetchYoutubeVideo = async () => {
       await fetchVideos((items) => {
-        setLastVideos(items);
-      });
-    };
+        setLastVideos(items)
+      })
+    }
 
-    fetchYoutubeVideo();
-  }, []);
+    fetchYoutubeVideo()
+  }, [])
 
   return (
     <SectionContainerBody
@@ -47,5 +47,5 @@ export default function YoutubeComponent() {
       </div>
       <Button href="/youtube">Read More</Button>
     </SectionContainerBody>
-  );
+  )
 }

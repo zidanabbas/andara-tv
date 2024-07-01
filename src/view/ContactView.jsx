@@ -1,5 +1,5 @@
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
-import React from "react";
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx"
+import React from "react"
 
 export default function ContactView() {
   return (
@@ -82,5 +82,5 @@ export default function ContactView() {
         </form>
       </div>
     </ContainerBody>
-  );
+  )
 }
