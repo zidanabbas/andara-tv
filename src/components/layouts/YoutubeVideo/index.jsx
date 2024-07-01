@@ -1,36 +1,36 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import ContainerBody from "../SectionPage/ContainerBody.jsx";
-import Link from "next/link";
-import YoutubeComponent from "@/components/fragments/YoutubeComponent/index.jsx";
-import SectionContainerBody from "../SectionPage/SectionContainerBody.jsx";
-import { fetchVideos } from "@/services/youtube-api.js";
-import ContainTitle from "@/components/ui/ContainTitle.jsx";
+"use client"
+import React, { useEffect, useState } from "react"
+import ContainerBody from "../SectionPage/ContainerBody.jsx"
+import Link from "next/link"
+import YoutubeComponent from "@/components/fragments/YoutubeComponent/index.jsx"
+import SectionContainerBody from "../SectionPage/SectionContainerBody.jsx"
+import { fetchVideos } from "@/services/youtube-api.js"
+import ContainTitle from "@/components/ui/ContainTitle.jsx"
 
 export default function YoutubeVideo() {
-  const [LastVideos, setLastVideos] = useState([]);
+  const [LastVideos, setLastVideos] = useState([])
   useEffect(() => {
     const fetchYoutubeVideo = async () => {
       try {
         // Mengambil data dari sessionStorage jika tersedia
-        const cachedData = sessionStorage.getItem("cachedVideos");
+        const cachedData = sessionStorage.getItem("cachedVideos")
         if (cachedData) {
-          setLastVideos(JSON.parse(cachedData));
+          setLastVideos(JSON.parse(cachedData))
         } else {
           // Jika data tidak tersedia di cache, lakukan fetch dari API
           await fetchVideos((items) => {
-            setLastVideos(items);
+            setLastVideos(items)
             // menyimpan data ke session storage
-            sessionStorage.setItem("cachedVideos", JSON.stringify(items));
-          });
+            sessionStorage.setItem("cachedVideos", JSON.stringify(items))
+          })
         }
       } catch (error) {
-        console.error("Failed to fetch or cache videos:", error);
+        console.error("Failed to fetch or cache videos:", error)
       }
-    };
+    }
 
-    fetchYoutubeVideo();
-  }, []);
+    fetchYoutubeVideo()
+  }, [])
 
   return (
     <ContainerBody classname={"pt-28 pb-28 px-4 md:px-10"}>
@@ -64,5 +64,5 @@ export default function YoutubeVideo() {
         </Link>
       </SectionContainerBody>
     </ContainerBody>
-  );
+  )
 }
