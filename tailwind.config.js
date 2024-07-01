@@ -4,25 +4,25 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/view/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/view/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     container: {
       center: true,
-      padding: "16px",
+      padding: "16px"
     },
     extend: {
       screens: {
-        "2xl": "1320px",
+        "2xl": "1320px"
       },
       colors: {
         primary: "#FC8F00",
         secondary: "#BE710B",
         third: "#F9BC60",
-        "background-color": "#FFFFFE",
-      },
-    },
+        "background-color": "#FFFFFE"
+      }
+    }
   },
   darkMode: "class",
-  plugins: [],
-};
+  plugins: []
+}

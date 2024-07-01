@@ -5,10 +5,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
-        pathname: "/**",
-      },
-    ],
-  },
-};
+        pathname: "/**"
+      }
+    ]
+  }
+}
 
-export default nextConfig;
+export default nextConfig
