@@ -1,10 +1,10 @@
-import Banner from "@/components/fragments/banner";
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import Button from "@/components/ui/Button";
-import CardVideo from "@/components/ui/CardVideo";
-import ContainTitle from "@/components/ui/ContainTitle";
-import React from "react";
+import Banner from "@/components/fragments/banner"
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import Button from "@/components/ui/Button"
+import CardVideo from "@/components/ui/CardVideo"
+import ContainTitle from "@/components/ui/ContainTitle"
+import React from "react"
 
 export default function YoutubeView() {
   return (
@@ -76,5 +76,5 @@ export default function YoutubeView() {
         </SectionContainerBody>
       </ContainerBody>
     </>
-  );
+  )
 }

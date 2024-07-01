@@ -1,10 +1,10 @@
-import React from "react";
-import listLink from "@/lib/utils/listLink";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import React from "react"
+import listLink from "@/lib/utils/listLink"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 export default function NavLink() {
-  const pathname = usePathname();
+  const pathname = usePathname()
   return (
     <nav className="hidden md:flex items-center px-3 text-black py-1">
       <ul className="flex gap-3 justify-between w-full">
@@ -22,5 +22,5 @@ export default function NavLink() {
         ))}
       </ul>
     </nav>
-  );
+  )
 }

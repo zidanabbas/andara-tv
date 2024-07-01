@@ -1,8 +1,8 @@
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import Button from "@/components/ui/Button";
-import ContainTitle from "@/components/ui/ContainTitle";
-import Image from "next/image";
-import React from "react";
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import Button from "@/components/ui/Button"
+import ContainTitle from "@/components/ui/ContainTitle"
+import Image from "next/image"
+import React from "react"
 
 export default function ProfileComponent() {
   return (
@@ -35,5 +35,5 @@ export default function ProfileComponent() {
       </div>
       <Button href={"/profile"}>Read More</Button>
     </SectionContainerBody>
-  );
+  )
 }

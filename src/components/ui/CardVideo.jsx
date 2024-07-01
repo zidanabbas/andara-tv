@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function CardVideo({ embed, title, classname }) {
   return (
@@ -12,5 +12,5 @@ export default function CardVideo({ embed, title, classname }) {
       allowFullScreen
       className={`rounded-lg aspect-video ${classname}`}
     />
-  );
+  )
 }

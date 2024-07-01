@@ -1,8 +1,8 @@
-import GridGallery from "@/components/fragments/GalleryComponent/GridGallery";
-import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx";
-import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody";
-import ContainTitle from "@/components/ui/ContainTitle";
-import React from "react";
+import GridGallery from "@/components/fragments/GalleryComponent/GridGallery"
+import ContainerBody from "@/components/layouts/SectionPage/ContainerBody.jsx"
+import SectionContainerBody from "@/components/layouts/SectionPage/SectionContainerBody"
+import ContainTitle from "@/components/ui/ContainTitle"
+import React from "react"
 
 export default function GalleryView() {
   return (
@@ -15,5 +15,5 @@ export default function GalleryView() {
         <GridGallery />
       </SectionContainerBody>
     </ContainerBody>
-  );
+  )
 }
