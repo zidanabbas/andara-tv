@@ -3,7 +3,7 @@ import React from "react"
 
 export default function CardTalent({ src, alt, role, name, description }) {
   return (
-    <div className=" sm:w-64 md:w-80 lg:w-72 mb-8 sm:mb-0 overflow-hidden rounded-lg shadow-lg shadow-slate-500">
+    <div className=" sm:max-w-md lg:w-72 mb-8 sm:mb-0 overflow-hidden rounded-lg shadow-lg shadow-slate-500">
       <Image
         src={src}
         width={500}

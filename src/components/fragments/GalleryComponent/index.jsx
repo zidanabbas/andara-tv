@@ -25,8 +25,11 @@ export default function GalleryComponent() {
         title={"Gallery"}
         classname={"bg-background-color flex flex-wrap justify-center"}
       >
-        <ContainTitle title={"Gallery"} classname={"text-primary w-full"} />
-        <div className="w-full rounded-xl max-h-[800px] overflow-x-auto bg-primary/75 flex flex-wrap items-center justify-center lg:flex-row gap-4 lg:gap-6 px-4 py-6">
+        <ContainTitle
+          title={"Gallery"}
+          classname={"text-white bg-primary rounded-md w-full"}
+        />
+        <div className="w-full rounded-xl max-h-[800px] overflow-x-auto bg-third flex flex-wrap items-center justify-center lg:flex-row gap-4 lg:gap-6 px-4 py-6">
           {DataGallery.map((item) => (
             <ImageCard key={item.id} src={item.url} alt={item.url} />
           ))}

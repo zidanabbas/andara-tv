@@ -8,6 +8,10 @@
   "env": {
     "browser": true
   },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
   "rules": {
     "prettier/prettier": "error",
     "@next/next/no-duplicate-head": "error",
