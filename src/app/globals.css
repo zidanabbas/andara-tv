@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-white rounded-full w-8 h-8;
+  position: relative;
+}
+
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+.mySwiperMain .swiper-button-next,
+.mySwiperMain .swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mySwiperThumbs {
+  position: relative;
+}
+
+.navigation-buttons .swiper-button-next,
+.navigation-buttons .swiper-button-prev {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.progress-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(calc(360deg * var(--progress)));
+  transform-origin: center;
+}
+
+.progress-content {
+  position: absolute;
+  color: black;
+  font-size: 0.8rem;
+}
