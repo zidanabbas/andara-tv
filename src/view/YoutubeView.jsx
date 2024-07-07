@@ -27,8 +27,7 @@ export default function YoutubeView() {
     }
     fetchVideos()
   }, [])
-  console.log(videos)
-  // mengambil data single video dari API atau localStorage
+
   useEffect(() => {
     const fetchSingleVideo = async () => {
       const storedSingleVideo = localStorage.getItem("singleVideo")
