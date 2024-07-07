@@ -3,8 +3,11 @@ import CardVideo from "@/components/ui/CardVideo"
 
 export default function VideoComponent({ embed, title }) {
   return (
-    <div className="max-w-md md:max-w-3xl md:h-72 flex items-center justify-center rounded-lg p-3 overflow-hidden shadow-md shadow-slate-900">
+    <div className="w-full aspect-[16/9] bg-primary rounded-lg overflow-hidden shadow-lg relative">
       <CardVideo embed={embed} title={title} />
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+        <h3 className="text-white text-lg font-semibold text-right">{title}</h3>
+      </div>
     </div>
   )
 }
