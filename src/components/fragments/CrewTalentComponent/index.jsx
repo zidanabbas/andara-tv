@@ -101,12 +101,12 @@ export default function CrewTalentComponent() {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div
+          {/* <div
             className="progress-circle absolute bottom-4 right-4 flex items-center justify-center"
             ref={progressCircle}
           >
             <div className="progress-content text-white"></div>
-          </div>
+          </div> */}
         </div>
       </SectionContainerBody>
     </div>
