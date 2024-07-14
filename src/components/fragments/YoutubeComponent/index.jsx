@@ -10,7 +10,7 @@ import SectionContainerBody from "@/components/layouts/SectionPage/SectionContai
 import ContainTitle from "@/components/ui/ContainTitle"
 import VideoComponent from "./VideoComponent"
 import Button from "@/components/ui/Button"
-import { getVideos } from "@/services/youtube-api"
+import { getLastVideo } from "@/services/youtube-api"
 import Image from "next/image"
 
 export default function YoutubeComponent() {
@@ -23,7 +23,7 @@ export default function YoutubeComponent() {
       if (storedVideos) {
         setLastVideos(JSON.parse(storedVideos))
       } else {
-        const items = await getVideos()
+        const items = await getLastVideo()
         setLastVideos(items)
         localStorage.setItem("LastVideos", JSON.stringify(items))
       }
@@ -86,7 +86,6 @@ export default function YoutubeComponent() {
               watchSlidesProgress={true}
               modules={[FreeMode, Thumbs, Navigation]}
               className="mySwiperThumbs mt-4"
-              navigation={true}
               breakpoints={{
                 640: {
                   slidesPerView: 3,
