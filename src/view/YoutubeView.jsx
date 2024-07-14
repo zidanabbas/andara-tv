@@ -6,6 +6,7 @@ import Button from "@/components/ui/Button"
 import CardVideo from "@/components/ui/CardVideo"
 import ContainTitle from "@/components/ui/ContainTitle"
 import { getVideos, getSingleVideo } from "@/services/youtube-api"
+import Link from "next/link"
 
 export default function YoutubeView() {
   const [videos, setVideos] = useState([])
@@ -16,7 +17,7 @@ export default function YoutubeView() {
   // mengambil data semua video terakhir dari API atau localStorage
   useEffect(() => {
     const fetchVideos = async () => {
-      const storedVideos = localStorage.getItem("LastVideos")
+      const storedVideos = localStorage.getItem("videos")
       if (storedVideos) {
         setVideos(JSON.parse(storedVideos))
       } else {
@@ -73,7 +74,7 @@ export default function YoutubeView() {
                 </div>
               )}
             </div>
-            <div className="w-full md:w-1/2 lg:max-w-md">
+            <div className="w-full md:w-1/2 lg:max-w-md mt-4 md:mt-0">
               <ContainTitle
                 title={"Video Terbaru"}
                 classname={
@@ -152,7 +153,15 @@ export default function YoutubeView() {
                 ))
               ) : (
                 <div className="flex items-center justify-center w-full h-full">
-                  <p className="text-sm">Video Tidak Ditemukan</p>
+                  <p className="text-sm text-balance">
+                    Video Tidak Ditemukan kunjungi youtube kami
+                  </p>
+                  <Button
+                    href={"https://youtube.com/@andaratventertainment"}
+                    classname={"bg-primary hover:bg-primary/80"}
+                  >
+                    Youtube
+                  </Button>
                 </div>
               )}
             </div>
